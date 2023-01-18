@@ -18,7 +18,7 @@ double * double_dest   = (double*) & mas_b;
 
 int main()
 {
-    char size_difference = sizeof(double*) / sizeof(mas_a[0]);
+    char size_difference = sizeof(double) / sizeof(mas_a[0]);
     int leftover = N % size_difference;
     int copy_size = (N - leftover) / size_difference;
 

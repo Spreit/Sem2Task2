@@ -9,7 +9,7 @@
 
 #include <iostream>
 
-const int N = 20;
+const int N = 21;
 int mas_a[N] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 int mas_b[N] = { 0 };
 

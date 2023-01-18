@@ -45,38 +45,6 @@ int main()
 
 }
 
-/*
-Можно просто memcpy???
-const int N = 21;
-int mas_a[N] = { 1, 2, 3, 4, 5 };
-int mas_b[N] = { 0 };
-
-double* double_origin = (double*)&mas_a;
-double* double_dest   = (double*)&mas_b;
-
-
-int main()
-{
-    //Сколько double
-    int half_size = (N - N % 2) / 2;
-
-    //Так быстрее (наверное) за счет переноса 2 int за раз в одном double
-    for (int i = 0; i < half_size; ++i) {
-        *(double_dest + i) = *(double_origin + i);
-    }
-
-    if (N % 2 == 1) {
-        mas_b[N - 1] = mas_a[N - 1];
-        std::cout << "Leftover" << std::endl;
-    }
-
-    std::cout << half_size << std::endl;
-
-    std::cout << mas_b[N - 1] << std::endl;
-
-
-*/
-
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
